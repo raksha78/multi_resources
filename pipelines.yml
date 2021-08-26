@@ -392,7 +392,7 @@ pipelines:
         execution:
           onExecute:
             - echo "This is my second step."
-      - name: my_step_3q
+      - name: my_step_31
         type: Bash
         configuration:
           inputSteps:
