@@ -4,7 +4,7 @@ resources:
       configuration:
        gitProvider: raksha78_github            
        path: raksha78/bugfix-6256
-    - name: "resource_2"
+    - name: "resource_1"
       type: PropertyBag
       configuration:
        gitProvider: raksha78_github            
