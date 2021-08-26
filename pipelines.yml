@@ -1703,7 +1703,7 @@ pipelines:
         execution:
           onExecute:
             - echo "This is my second step."
-      - name: my_step_3
+      - name: my_step_31
         type: Bash
         configuration:
           inputSteps:
