@@ -8,6 +8,10 @@ pipelines:
             - echo "This is my second step."
       - name: my_step
         type: Bash
+        execution:
+          onExecute:
+            - echo "This is my step."
+            - sleep 1m
         configuration:
           timeoutSeconds: 30
           inputSteps:
@@ -1674,10 +1678,7 @@ pipelines:
             - name: resource1729
             - name: resource1730
             - name: resource1731
-          execution:
-          onExecute:
-            - echo "This is my step."
-            - sleep 1m
+     
       - name: my_step_7
         type: Bash
         configuration:
