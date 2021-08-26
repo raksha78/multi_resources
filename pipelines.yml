@@ -1,0 +1,344 @@
+pipelines:
+  - name: my_pipeline_perf_test
+    steps:
+      - name: my_main_step
+        type: Bash
+        execution:
+          onExecute:
+            - echo "This is my second step."
+      - name: my_step
+        type: Bash
+        configuration:
+          timeoutSeconds: 30
+          inputSteps:
+            - name: my_main_step
+          inputResources:
+            - name: resource1
+            - name: resource2
+            - name: resource3
+            - name: resource4
+            - name: resource5
+            - name: resource6
+            - name: resource7
+            - name: resource8
+            - name: resource9
+            - name: resource10
+            - name: resource11
+            - name: resource12
+            - name: resource13
+            - name: resource14
+            - name: resource15
+            - name: resource16
+            - name: resource17
+            - name: resource18
+            - name: resource19
+            - name: resource20
+            - name: resource21
+            - name: resource22
+            - name: resource23
+            - name: resource24
+            - name: resource25
+            - name: resource26
+            - name: resource27
+            - name: resource28
+            - name: resource29
+            - name: resource30
+            - name: resource31
+            - name: resource32
+            - name: resource33
+            - name: resource34
+            - name: resource35
+            - name: resource36
+            - name: resource37
+            - name: resource38
+            - name: resource39
+            - name: resource40
+            - name: resource41
+            - name: resource42
+            - name: resource43
+            - name: resource44
+            - name: resource45
+            - name: resource46
+            - name: resource47
+            - name: resource48
+            - name: resource49
+            - name: resource50
+            - name: resource51
+            - name: resource52
+            - name: resource53
+            - name: resource54
+            - name: resource55
+            - name: resource56
+            - name: resource57
+            - name: resource58
+            - name: resource59
+            - name: resource60
+            - name: resource61
+            - name: resource62
+            - name: resource63
+            - name: resource64
+            - name: resource65
+            - name: resource66
+            - name: resource67
+            - name: resource68
+            - name: resource69
+            - name: resource70
+            - name: resource71
+            - name: resource72
+            - name: resource73
+            - name: resource74
+            - name: resource75
+            - name: resource76
+            - name: resource77
+            - name: resource78
+            - name: resource79
+            - name: resource80
+            - name: resource81
+            - name: resource82
+            - name: resource83
+            - name: resource84
+            - name: resource85
+            - name: resource86
+            - name: resource87
+            - name: resource88
+            - name: resource89
+            - name: resource90
+            - name: resource91
+            - name: resource92
+            - name: resource93
+            - name: resource94
+            - name: resource95
+            - name: resource96
+            - name: resource97
+            - name: resource98
+            - name: resource99
+            - name: resource100
+            - name: resource101
+            - name: resource102
+            - name: resource103
+            - name: resource104
+            - name: resource105
+            - name: resource106
+            - name: resource107
+            - name: resource108
+            - name: resource109
+            - name: resource110
+            - name: resource111
+            - name: resource112
+            - name: resource113
+            - name: resource114
+            - name: resource115
+            - name: resource116
+            - name: resource117
+            - name: resource118
+            - name: resource119
+            - name: resource120
+            - name: resource121
+            - name: resource122
+            - name: resource123
+            - name: resource124
+            - name: resource125
+            - name: resource126
+            - name: resource127
+            - name: resource128
+            - name: resource129
+            - name: resource130
+            - name: resource131
+            - name: resource132
+            - name: resource133
+            - name: resource134
+            - name: resource135
+            - name: resource136
+            - name: resource137
+            - name: resource138
+            - name: resource139
+            - name: resource140
+            - name: resource141
+            - name: resource142
+            - name: resource143
+            - name: resource144
+            - name: resource145
+            - name: resource146
+            - name: resource147
+            - name: resource148
+            - name: resource149
+            - name: resource150
+            - name: resource151
+            - name: resource152
+            - name: resource153
+            - name: resource154
+            - name: resource155
+            - name: resource156
+            - name: resource157
+            - name: resource158
+            - name: resource159
+            - name: resource160
+            - name: resource161
+            - name: resource162
+            - name: resource163
+            - name: resource164
+            - name: resource165
+            - name: resource166
+            - name: resource167
+            - name: resource168
+            - name: resource169
+            - name: resource170
+            - name: resource171
+            - name: resource172
+            - name: resource173
+            - name: resource174
+            - name: resource175
+            - name: resource176
+            - name: resource177
+            - name: resource178
+            - name: resource179
+            - name: resource180
+            - name: resource181
+            - name: resource182
+            - name: resource183
+            - name: resource184
+            - name: resource185
+            - name: resource186
+            - name: resource187
+            - name: resource188
+            - name: resource189
+            - name: resource190
+            - name: resource191
+            - name: resource192
+            - name: resource193
+            - name: resource194
+            - name: resource195
+            - name: resource196
+            - name: resource197
+            - name: resource198
+            - name: resource199
+            - name: resource200
+            - name: resource201
+            - name: resource202
+            - name: resource203
+            - name: resource204
+            - name: resource205
+            - name: resource206
+            - name: resource207
+            - name: resource208
+            - name: resource209
+            - name: resource210
+            - name: resource211
+            - name: resource212
+            - name: resource213
+            - name: resource214
+            - name: resource215
+            - name: resource216
+            - name: resource217
+            - name: resource218
+            - name: resource219
+            - name: resource220
+            - name: resource221
+            - name: resource222
+            - name: resource223
+            - name: resource224
+            - name: resource225
+            - name: resource226
+            - name: resource227
+            - name: resource228
+            - name: resource229
+            - name: resource230
+            - name: resource231
+            - name: resource232
+            - name: resource233
+            - name: resource234
+            - name: resource235
+            - name: resource236
+            - name: resource237
+            - name: resource238
+            - name: resource239
+            - name: resource240
+            - name: resource241
+            - name: resource242
+            - name: resource243
+            - name: resource244
+            - name: resource245
+            - name: resource246
+            - name: resource247
+            - name: resource248
+            - name: resource249
+            - name: resource250
+        execution:
+          onExecute:
+            - echo "This is my step."
+            - sleep 1m
+      - name: my_step_7
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: my_main_step
+        execution:
+          onExecute:
+            - echo "This is my second step."
+      - name: my_step_8
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: my_main_step
+        execution:
+          onExecute:
+            - echo "This is my second step."
+      - name: my_step_9
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: my_main_step
+        execution:
+          onExecute:
+            - echo "This is my second step."
+      - name: my_step_3
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: my_main_step
+        execution:
+          onExecute:
+            - echo "This is my step."
+      - name: my_step_3
+        type: Bash
+        configuration:
+          timeoutSeconds: 30
+          inputSteps:
+            - name: my_main_step
+        execution:
+          onExecute:
+            - echo "This is my step."
+            - sleep 1m
+      - name: my_step_4
+        type: Bash
+        configuration:
+          timeoutSeconds: 30
+          inputSteps:
+            - name: my_main_step
+        execution:
+          onExecute:
+            - echo "This is my step."
+            - sleep 1m
+
+      - name: my_step_5
+        type: Bash
+        configuration:
+          timeoutSeconds: 30
+          inputSteps:
+            - name: my_main_step
+        execution:
+          onExecute:
+            - echo "This is my step."
+            - sleep 1m
+
+      - name: my_step_6
+        type: Bash
+        configuration:
+          timeoutSeconds: 30
+          inputSteps:
+            - name: my_main_step
+        execution:
+          onExecute:
+            - echo "This is my step."
+            - sleep 1m
+   
